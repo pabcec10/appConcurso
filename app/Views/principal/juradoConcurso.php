@@ -8,7 +8,7 @@
 <br><br>
   <div class="row alert-info">
    		<div class="col-lg-12 text-center">
-    		<h4>JURADOS DEL CONCURSO. Cantidad Jurados:  <?= $CantReg; ?> </h4>
+    		<h4>JURADOS DEL CONCURSO. Cantidad Jurados S:  <?= $CantRegS; ?> </h4>
     	</div>
   </div>
 <br><br>
@@ -101,7 +101,7 @@
 <br><br>
  <div class="row alert-danger">
    		<div class="col-lg-12 text-center">
-        <?php if ($CantReg==0) { ?>
+        <?php if (((int)$CantRegT+(int)$CantRegS)==0) { ?>
     		  <h4>No hay Jurado asignado a este concurso </h4>
         <?php }  else { ?>
           <h4>Si hay Jurado asignado a este concurso </h4>
@@ -122,12 +122,12 @@
    <div class="col-lg-3">
     		<label>Caracter: </label>
       
-<? //if ($totalRows_result14 < "3"){ ?>
+<?php if ((int)$CantRegT < 3){ ?>
       	<input name="caracter" type="radio" value="Titular" required>&nbsp;Titular&nbsp;&nbsp;&nbsp;&nbsp;
-<?php //}  ?>        
-<? //if ($totalRows_result15 < "2"){ ?>       
+<?php }  ?>        
+<?php if ((int)$CantRegS < 2){ ?>       
       	<input name="caracter" type="radio" value="Suplente" required>&nbsp;Suplente
-<?php //}  ?>     
+<?php }  ?>     
  	  </div>
    <div class="col-lg-2">
         <input type="hidden" name="idConcurso" value="<?php //echo $extraido10['idConcurso'];?>">

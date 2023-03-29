@@ -224,14 +224,21 @@ class Concursos extends Controller{
 
         $datos['concursoJurados']=$builder->get()->getResultArray();
 
-        //Calculo cantidad de Jurados
+        //Calculo cantidad de Jurados Titulares
+        $builder = $db->table('juradoconcurso_tbl');
+        $builder->select('idConcurso')
+                ->where('idConcurso',$idCon)
+                ->where('caracter','Titular');
+        $result = $builder->countAllResults();
+        $datos['CantRegT']=$result;
+
+        //Calculo cantidad de Jurados Suplentes
         $builder = $db->table('juradoconcurso_tbl');
         $builder->select('idConcurso');
         $builder->where('idConcurso',$idCon);
-        $result = $builder->countAll();
-        $datos['CantReg']=$result;
-
-        //print_r($result);
+        $builder->where('caracter','Suplente');
+        $resultS = $builder->countAll();
+        $datos['CantRegS']=$resultS;
 
         return view('principal/juradoConcurso',$datos);
     }
