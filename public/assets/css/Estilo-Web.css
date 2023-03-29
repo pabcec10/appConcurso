@@ -1,0 +1,389 @@
+@charset "utf-8";
+
+body {
+background-color:#f2efef;
+}
+
+.imagen:hover {
+	opacity: 0.9;
+	transform: scale(1.06);
+	filter: blur(0.5px);
+}
+
+
+
+.margenContenedor1 {
+	padding-top: 39px;
+	margin: 0px;
+  padding-left: 0px;
+	padding-right: 0px;
+}
+
+.formatoTexto {
+	color: #FFFFFF;
+	font-family: "Futura Bk BT";
+	background-color: #2F4E78;
+	padding-top: 0px;
+}
+
+.contenedor {
+	width: 350px;
+	height: 475px;
+	/*margin: 150px auto;*/
+	/*padding: 20px;*/
+	background: #fff;
+	overflow: auto;
+	font-family: 'Century Gothic';
+	border-radius: 4px;
+	padding-right: 5px;
+	padding-left: 5px;
+	
+	font-size: 15px;
+}
+
+.contenedor h1 {
+	font-size: 5px;
+	font-weight: 400;
+	color: #000;
+}
+
+.contenedor hr {
+	background: #036eb7;
+	width: 20%;
+	height: 5px;
+	border: none;
+	/*margin: 20px 0;*/
+
+	border-radius: 50px;
+}
+
+
+/* Scroll Personalizado */
+
+.contenedor::-webkit-scrollbar {
+	width: 7px;
+}
+
+.contenedor::-webkit-scrollbar-thumb {
+	background: #036eb7;
+	border-radius: 5px;
+}
+
+
+.lineaHorizontal {
+	border-bottom: 2px solid #000000;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.separacionItemMenu {
+	/* [disabled]padding-left: 0%; */
+	margin-left: 56px;
+	margin-right: 0px;
+	font-size: 15px;
+	margin-top: 25px;/* 1 */
+	padding-top: 0px;
+ /*color: #FFFFFF;*/
+}
+
+
+.separadorQuienesSomos {
+	margin-top: 5%;
+	margin-bottom: 5%;
+
+}
+
+.mapa {
+	margin-left: 0px;
+	margin-top: 5%;
+	padding-right: 0px;
+	padding-left: 0px;
+	margin-right: 0%;
+	border-left-color: #000000;
+	height: 469px;
+}
+
+.margenForm {
+	border: thin solid #D0D0D0;
+}
+.margenForm1 {
+	border: thin solid #D0D0D0;
+	border-spacing: 0px 19px;
+}
+.TextoTituloForm {
+	margin-left: 5%;
+	margin-right: 5%;
+	font-size: large;
+	text-align: center;
+}
+.TextoForm {
+ font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+ background-color: #EBEBEB;
+ text-align: left;
+ vertical-align: middle;
+ /* [disabled]font-weight: bold; */
+ font-style: normal;
+ padding-top: 3px;
+}
+.TextoForm1 {
+ font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+ background-color: #E8F1FF;
+ text-align: left;
+ font-style: normal;
+ padding-top: 3px;
+}
+.TextoForm2 {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: #F5F5F5;
+	text-align: left;
+	font-style: normal;
+	padding-top: 3px;
+}
+.margenPie {
+	position:absolute;
+	bottom: 0%; /*Abajo deje un espacio de 0px*/
+	
+}
+
+.fondoPagina{
+	position:fixed;
+	bottom:0;
+	z-index:999999; 
+	}
+
+.margenPieV1 {
+	position: fixed;
+	width: 100%;
+
+}
+.Fondo {
+	background-color: #EF676A;
+}
+
+.margenDatosClientes {
+	background-color: #CDCDCD;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 3px;
+	vertical-align: middle;
+}
+.lineaSeparadora {
+	border-bottom: thin solid #BDBCBC;
+}
+.TextoActividad {
+	color: #2200FF;
+}
+.VentanaModal {
+	width: 100%;
+}
+.margenTitulos {
+	margin-top: -31px;
+
+}
+.fondoGris {
+ background-color: #EFEFEF;
+}
+.fondoGris1 {
+	background-color: #036DB9;
+	font-size: 15px;
+	font-weight: normal;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 1%;
+	padding-right: 1%;
+	color: #FFFFFF;
+}
+
+.fondoPiePagina {
+	background-color: #036DB9;
+	font-size: 15px;
+	font-weight: normal;
+	margin-top: 1%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+.textoListadoClientes {
+ font-size: 10px;
+}
+.textoDocumentacion {
+ font-size: 12px;
+}
+.separacionCuadro {
+ margin-left: 7px;
+}
+.textoPiePagina {
+	padding-top: 6px;
+	margin-top: -4px;
+}
+.margenBanner {
+	margin-top: -4%;
+	padding-top: 0px;
+}
+.logoPie {
+	padding-top: 92px;
+	margin-top: -39px;
+}
+.textoQuienesSomos {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 15px;
+	line-height: 24px;
+}
+.textoCentral {
+	font-size: 18px;
+	line-height: 27px;
+}
+.textoNoticias {
+	line-height: 25px;
+	font-size: 14px;
+
+}
+.animacion {
+}
+.colorRVCheque {
+	background-color: #006CFF;
+}
+.textoDerecha {
+	text-align: right;
+}
+.ingenieria {
+ background-image: url(../imagenes/fi1.jpg);
+}
+.margenCero {
+ margin-left: auto;
+ margin-right: auto;
+ width: auto;
+ padding-left: 0%;
+ padding-right: 0%;
+}
+.fondoFACSO {
+ background-color: #0055A1;
+}
+.fondoFI {
+ background-color: #00723D;
+}
+.fondoFFHA {
+ background-color: #BC318D;
+}
+.fondoExactas {
+ background-color: #FE7C23;
+}
+
+
+
+.fondoEUCS {
+ background-color: #BE3741;
+}
+.fondoFAUD {
+ background-color: #FFB52F;
+}
+.textoBlanco {
+ color: #FFFFFF;
+}
+.interlineado {
+ line-height: 34px;
+ padding-top: 4px;
+ padding-bottom: 5px;
+}
+
+.tituloNoticias {
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	background-color: #F8F8F8;
+}
+
+
+.margenCalendar {
+	margin-top: 1.6%;
+}
+.margenHome {
+	margin-top: 13px;
+
+}
+.home {
+	margin-left: 35px;
+	margin-top: -25px;
+
+}
+.margenBusqueda {
+	margin-top: 74px;
+	margin-bottom: 6px;
+	font-size: small;
+	text-decoration: none;
+}
+
+.margenLogoMenu {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+
+
+
+@media (max-width: 480px){
+.imagen {
+	transform: scale(1.09);
+	filter: blur(0.5px);
+	padding-bottom: 17%;
+}
+
+}
+
+
+
+
+
+@media (min-width: 480px) and (max-width: 767px){
+.imagen {
+	transform: scale(1.09);
+	filter: blur(0.5px);
+	padding-left: 15%;
+	padding-bottom: 69px;
+}
+
+
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991px){
+
+}
+
+
+
+
+@media (min-width:992px) and (max-width:1199px){
+
+
+}
+
+
+@media (min-width:1200px) and (max-width:1440px){
+
+.separacionItemMenu {
+	margin-left: 12px;
+	margin-right: 0px;
+	font-size: 12px;
+	margin-top: 25px;/* 1 */
+	padding-top: 0px;
+}
+
+}
+
+@media (min-width:1441px) and (max-width:1670px){
+.separacionItemMenu {
+	margin-left: 40px;
+	margin-right: 0px;
+	font-size: 14px;
+	margin-top: 25px;/* 1 */
+	padding-top: 0px;
+}
+
+
+}
+

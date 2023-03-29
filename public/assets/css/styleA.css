@@ -1,0 +1,280 @@
+html { font: 100%/1.3 'Quicksand',Century Gothic, Verdana, sans-serif; }
+body {
+ overflow: hidden;
+ min-width: 20em;
+}
+
+.visible{
+    display: block;
+    position: absolute;
+    margin: 0px 0 0 0px; /* ubicaciobn de las imagenes de la facultad */ 
+    z-index: 5;
+}
+
+.hidden{
+  display:none;
+}
+
+.textoMenu {
+ z-index: 2;
+ font-weight: normal;
+/* height: 99px;*/
+ color: #F9F9F9;
+/* font-size: 14px;*/
+ /* [disabled]font-size: 13px; */
+}
+
+body div nav {
+ margin-top: 53px;
+}
+
+
+nav ul li {
+ display: block;
+}
+
+nav ul li:hover {
+ font-size: 18px;
+ opacity: 0.5;
+}
+
+.flex-container {
+display: flex;
+flex-direction:column;
+/*background-color: aqua;*/
+padding-top: 2%;
+}
+
+
+.flex-item {
+width: 20%;
+display: flex;
+flex-direction: column;
+margin-bottom: 2.3%;
+height: 50px;
+align-items:flex-start;
+justify-content: center;
+
+}
+
+.imagenFac {
+ z-index: -1;
+}
+
+.fondoFacultades {
+ z-index: -3;
+}
+
+.fondoFAUD {
+ background-color: #fbbb21;
+ border-radius: 8px;
+ padding-right: 10px;
+ padding-left: 10px;
+}
+
+.fondoFCEFN {
+ background-color: #ef7d00;
+ border-radius: 8px;
+ padding-right: 10px;
+ padding-left: 10px;
+}
+
+.fondoFACSO {
+ background-color: #174290;
+ border-radius: 8px;
+ padding-right: 10px;
+ padding-left: 10px;
+}
+
+.fondoEUCS {
+ background-color: #9a1915;
+ border-radius: 8px;
+ padding-right: 10px;
+ padding-left: 10px;
+}
+
+.fondoFFHA {
+ background-color: #a7177d;
+ border-radius: 8px;
+ padding-right: 10px;
+ padding-left: 10px;
+}
+
+.fondoFI {
+ background-color: #226c2e;
+ border-radius: 8px;
+ padding-right: 10px;
+ padding-left: 10px;
+}
+
+.top-circle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%/10%;
+/*  background-color: green;*/
+  height: 50px;
+  width: 22%;
+}
+
+.top-circle:before {
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    right: -1%;
+    left: -1%;
+    background: inherit;
+/*    border-radius: 8% ;*/
+}
+
+
+
+@media (min-width: 480px) and (max-width: 767px){
+
+.flex-container {
+display: flex;
+flex-direction:column;
+/*background-color: aqua;*/
+padding-top: 0%;
+}
+
+.textoMenu {
+ z-index: 2;
+/* font-weight: normal;*/
+/*height: 10px;*/
+color:#FFFFFF;
+font-size: 4px;
+}
+
+
+.flex-item {
+width: 20%;
+display: flex;
+flex-direction: column;
+margin-bottom: 2.3%;
+height: 15px;
+align-items:flex-start;
+justify-content: center;
+
+}
+
+.fondoFAUD {
+ background-color: #fbbb21;
+ border-radius: 8px;
+ padding-right: 10px;
+ padding-left: 20px;
+}
+
+.fondoFCEFN {
+ background-color: #ef7d00;
+ border-radius: 8px;
+ padding-right: 10px;
+ padding-left: 20px;
+}
+
+.fondoFACSO {
+ background-color: #174290;
+ border-radius: 8px;
+ padding-right: 10px;
+ padding-left: 20px;
+}
+
+.fondoEUCS {
+ background-color: #9a1915;
+ border-radius: 8px;
+ padding-right: 10px;
+ padding-left: 20px;
+}
+
+.fondoFFHA {
+ background-color: #a7177d;
+ border-radius: 8px;
+ padding-right: 10px;
+ padding-left: 20px;
+}
+
+.fondoFI {
+ background-color: #226c2e;
+ border-radius: 8px;
+ padding-right: 10px;
+ padding-left: 20px;
+}
+
+}
+
+
+/*******************************************************************************/
+@media (max-width: 480px){
+
+
+.flex-container {
+display: flex;
+flex-direction:column;
+/*background-color: aqua;*/
+padding-top: 0%;
+}
+
+.textoMenu {
+ z-index: 2;
+/* font-weight: normal;*/
+/*height: 10px;*/
+color:#FFFFFF;
+font-size: 4px;
+}
+
+
+.flex-item {
+width: 20%;
+display: flex;
+flex-direction: column;
+margin-bottom: 2.3%;
+height: 15px;
+align-items:flex-start;
+justify-content: center;
+
+}
+
+.fondoFAUD {
+ background-color: #fbbb21;
+ border-radius: 8px;
+ padding-right: 10px;
+ padding-left: 20px;
+}
+
+.fondoFCEFN {
+ background-color: #ef7d00;
+ border-radius: 8px;
+ padding-right: 10px;
+ padding-left: 20px;
+}
+
+.fondoFACSO {
+ background-color: #174290;
+ border-radius: 8px;
+ padding-right: 10px;
+ padding-left: 20px;
+}
+
+.fondoEUCS {
+ background-color: #9a1915;
+ border-radius: 8px;
+ padding-right: 10px;
+ padding-left: 20px;
+}
+
+.fondoFFHA {
+ background-color: #a7177d;
+ border-radius: 8px;
+ padding-right: 10px;
+ padding-left: 20px;
+}
+
+.fondoFI {
+ background-color: #226c2e;
+ border-radius: 8px;
+ padding-right: 10px;
+ padding-left: 20px;
+}
+
+}

@@ -1,0 +1,52 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400italic);
+* { margin: 0; }
+body { 
+  margin: 0;
+  font-family: Source Sans Pro, sans-serif; 
+} 
+dl#simple-gallery { 
+  position: relative;
+/*  background: #222;*/
+  background: #fff;
+  font-size: 0;
+  padding: 3rem;
+  padding-bottom: 8rem;
+}
+dl#simple-gallery dt{
+  width: 11.5%; /* 12.5 */ /* de las miniaturas*/
+  min-width: 50px;
+  padding: 5px;
+  cursor: pointer;
+ 
+}
+dl#simple-gallery dt img { 
+  width: 100%;
+  height: auto;
+}
+dl#simple-gallery dt:hover+dd, dl#simple-gallery dt:focus+dd { 
+  opacity:1;
+}
+dl#simple-gallery dd { 
+  position: absolute;
+  top: 3rem;
+  left: 15%;
+  opacity: 0;
+  transition: .7s opacity;
+  text-align: center;
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #fff;
+  padding-left: 0;
+  width: 90%; /*40*/ /* tamaño imagen */ 
+}
+dl#simple-gallery dd img{
+  width: 90%;
+  height: auto;
+  box-shadow:0 0 8px rgba(0,0,0,0.3);
+  display:block;
+  margin-bottom: 1rem;
+  /*padding-left: 10px;*/
+}
+
+#simple-gallery:hover {filter: opacity(.5);}
+/*#simple-gallery:hover img {width:480px; height:320px;}*/
