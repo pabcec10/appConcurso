@@ -27,9 +27,11 @@
                     <td><?=$concurso['cargo'];?></td>
                     <td><?=$concurso['descripcionCargo'];?></td>
                     <td><?=$concurso['expediente'];?></td>
+
                     <?=list($ano,$mes,$dia)=explode("-",$concurso['fechaInicio']);
                     $fechaInicio="$dia/$mes/$ano";?>
                     <td><?=$fechaInicio?></td>
+                    
                     <?=list($ano,$mes,$dia)=explode("-",$concurso['fechaCierre']);
                     $fechaCierre="$dia/$mes/$ano";?>
                     <td><?=$fechaCierre?></td>

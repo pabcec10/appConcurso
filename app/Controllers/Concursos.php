@@ -10,6 +10,7 @@ class Concursos extends Controller{
     public function index()
     {
         $concursos=new concurso();
+        //print_r(site_url());die();
         $datos['concursos']=$concursos->orderBy('idConcurso','ASC')->findAll();
         //$datos['concursos']=
         $datos['cabecera']=view('template/cabecera');
