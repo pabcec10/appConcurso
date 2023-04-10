@@ -4,9 +4,9 @@
 <form method="post" action="<?=site_url('/altaConcursoAuxiliar_1') ?>" > 
 
 <div class="panel panel-default">
-  <div class="panel-body">
-    <font size="4">ALTA CONCURSO AUXILIAR DOCENTE, DE INVESTIGACION O CREACION</font>
-  </div>
+	<div class="panel-body">
+		<font size="4">ALTA CONCURSO AUXILIAR DOCENTE, DE INVESTIGACION O CREACION</font>
+	</div>
 </div>
 <br>
 <div class="container-fluid">

@@ -238,27 +238,51 @@ class Concursos extends Controller{
         $builder->select('idConcurso');
         $builder->where('idConcurso',$idCon);
         $builder->where('caracter','Suplente');
-        $resultS = $builder->countAll();
-        $datos['CantRegS']=$resultS;
+        $result = $builder->countAllResults();
+        $datos['CantRegS']=$result;
 
         return view('principal/juradoConcurso',$datos);
     }
-    public function altaJuradoConcurso()
+    public function altaJuradoConcurso() //altaJuradoConcurso
     {
+        $nroDoc=$this->request->getVar('country');
+        $motivoB='NADA';
+        //print_r($nroDoc); die;
         //Hace referencia al modelo
-        $juradosConcurso=new Jurados();
+        $jurado=new Jurados();
+
+        
+
+        $db      = \Config\Database::connect();
+        $builder=$db->table('jurados_tbl');
+        $builder->select('idJurado');
+        $builder->where('documento',$nroDoc);
+        $query=$builder->get();
+        $idJurado=0;
+        foreach($query->getResult() as $row)
+        {
+            $idJurado=$row->idJurado;
+        }
+        //print_r($idJurado); die;
+        //Hace referencia al modelo
+        
+        $idCon=$this->request->getVar('idConcurso');
+
+        //print_r(site_url('/juradoConcurso'.$idCon)); die;
         //Carga el arreglo con los datos a insertar
         $datos=[
-            'idJurado'=>$this->request->getVar('nombre'),
-            'idConcurso'=>$this->request->getVar('documento'),
-            'caracter'=>$this->request->getVar('celular'),
-            'fechaAsignacion'=>$this->request->getVar('email'),
-            'motivoBaja'=>$this->request->getVar('email')
+            'idJurado'=>$idJurado,
+            'idConcurso'=>$idCon,
+            'caracter'=>$this->request->getVar('caracter'),
+            'fechaAsignacion'=>date('d - m - Y'),
+            'motivoBaja'=>$motivoB
         ];
         //Carga en la base de datos
+        $juradosConcurso=new JuradoConcurso();
         $juradosConcurso->insert($datos);
         //Muestra el listado con el registro insertado
-        return $this->response->redirect(site_url('/juradoConcurso'));
+        return $this->response->redirect(site_url('/juradoConcurso/'.$idCon));
+
             
     }
 }

@@ -1,14 +1,10 @@
 <?=$cabecera?>
 
-
-
-<input type="hidden" name="idConcurso" value="<?= $idConcurso;?>">
-
 <div class="container">
 <br><br>
   <div class="row alert-info">
    		<div class="col-lg-12 text-center">
-    		<h4>JURADOS DEL CONCURSO. Cantidad Jurados S:  <?= $CantRegS; ?> </h4>
+    		<h4>JURADOS DEL CONCURSO. Cantidad Jurados S:  <?= $CantRegS; ?> T:<?= $CantRegT?> </h4>
     	</div>
   </div>
 <br><br>
@@ -113,30 +109,31 @@
 
 <label>Designar Jurados</label>
 <!-- <form action="asignarJurado.php" method="post" id="form2" name="form2"> -->
-<form method="post" action="<?=site_url('/altaJuradoConcurso') ?>" > 
-<div class="row">
+<form method="post" action="<?=site_url('/altaJuradoConcurso') ?>" >
+<input type="hidden" name="idConcurso" value="<?= $concurso['idConcurso']?>"> 
+	<div class="row">
 		<div class="col-lg-3">
-       <input type="text" name="country" size="10" id="country" class="form-control" placeholder="Ingrese DNI Jurado"/>  
-       <div id="countryList"></div>
-   </div>
-   <div class="col-lg-3">
+       		<input id="country"  type="text" name="country" size="10" id="country" class="form-control" placeholder="Ingrese DNI Jurado"/>  
+       		<div id="countryList"></div>
+   		</div>
+   		<div class="col-lg-3">
     		<label>Caracter: </label>
       
-<?php if ((int)$CantRegT < 3){ ?>
-      	<input name="caracter" type="radio" value="Titular" required>&nbsp;Titular&nbsp;&nbsp;&nbsp;&nbsp;
-<?php }  ?>        
-<?php if ((int)$CantRegS < 2){ ?>       
-      	<input name="caracter" type="radio" value="Suplente" required>&nbsp;Suplente
-<?php }  ?>     
- 	  </div>
-   <div class="col-lg-2">
-        <input type="hidden" name="idConcurso" value="<?php //echo $extraido10['idConcurso'];?>">
-        <button type="submit" class="btn-info">Asignar</button>
-    </div>
-</div>
-<div class="row" id="juradoDatos">
+			<?php if ((int)$CantRegT < 3){ ?>
+      			<input id="caracter" name="caracter" type="radio" value="Titular" required>&nbsp;Titular&nbsp;&nbsp;&nbsp;&nbsp;
+			<?php }  ?>        
+			<?php if ((int)$CantRegS < 2){ ?>       
+      			<input id="caracter" name="caracter" type="radio" value="Suplente" required>&nbsp;Suplente
+			<?php }  ?>     
+ 	  	</div>
+   		<div class="col-lg-2">
+        	<!-- <input type="hidden" name="idConcurso" value="<?php //echo $extraido10['idConcurso'];?>"> -->
+        	<button type="submit" class="btn-info">Asignar</button>
+    	</div>
+	</div>
+	<div class="row" id="juradoDatos">
 		<div class="col-lg-3"></div>
-</div>
+	</div>
 </form>
 
 

@@ -63,3 +63,4 @@ $routes->get('borrarJurado/(:num)', 'Concursos::borrarJurado/$1');
 $routes->get('editarJurado/(:num)', 'Concursos::editarJurado/$1');
 $routes->post('actualizarJurado', 'Concursos::actualizarJurado');
 $routes->get('juradoConcurso/(:num)', 'Concursos::juradoConcurso/$1');
+$routes->post('altaJuradoConcurso', 'Concursos::altaJuradoConcurso');
