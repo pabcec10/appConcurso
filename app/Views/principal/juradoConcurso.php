@@ -4,7 +4,7 @@
 <br><br>
   <div class="row alert-info">
    		<div class="col-lg-12 text-center">
-    		<h4>JURADOS DEL CONCURSO. Cantidad Jurados S:  <?= $CantRegS; ?> T:<?= $CantRegT?> </h4>
+    		<h4>JURADOS DEL CONCURSO.</h4>
     	</div>
   </div>
 <br><br>
